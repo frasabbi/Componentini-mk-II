@@ -1,2 +1,8 @@
-
-<app-expansion>ciccia</app-expansion>
+<div>
+    <app-expansion (onPanelView)="onPanelView($event)">ciccia</app-expansion>
+    <app-panel *ngIf="view">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus incidunt earum molestias soluta obcaecati
+        maxime a quibusdam commodi inventore, minus molestiae cupiditate veritatis possimus vitae voluptatem voluptates
+        illo, non reprehenderit!
+    </app-panel>
+</div>

@@ -6,5 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'Expansion-Panel';
+  view:boolean;
+  onPanelView(isOpen:boolean){
+    this.view=isOpen;
+  }
 }
