@@ -1,5 +1,59 @@
-.container{
-    outline: 2px white;
-    z-index: 2;
-    background: white;
+.papi {
+  display: flex;
+  position: fixed;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+
+  .block {
+    position: absolute;
+    width: 100%;
+    max-width: 734px;
+    background-color: #ffffff;
+    height: 100%;
+    max-height: 409px;
+    padding:0px 20px;
+    .x {
+      position: absolute;
+      top: 0px;
+      right: 5px;
+      cursor: pointer;
+      z-index: 1;
+    }
+    .title {
+      text-align: center;
+      padding: 0px 20px 0px 20px;
+    }
+    .subtitle{
+        text-align: center;
+        padding:10px 20px 20px 20px;
+    }
+    .scrolling-area {
+      border: 1px solid #989898;
+      width: 100%;
+      max-width: 694px;
+      height: 100%;
+      max-height: 250px;
+      overflow-y:auto; 
+    }
+    .buttons{
+        display:flex;
+        justify-content: space-between;
+        padding-top: 10px;
+        .btn-light{
+            color: #1775BE;
+            outline: #1775BE 1px solid;
+        }
+    }
+  }
+
+  .back {
+    position: absolute;
+    background-color: #323232;
+    opacity: 0.5;
+    height: 100%;
+    width: 100%;
+    z-index: auto;
+  }
 }

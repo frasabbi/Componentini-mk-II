@@ -1,6 +1,37 @@
-<div class="container">
-    <div class="row">
-        <div class="col text-center">fwfew</div>
+<div *ngIf="isView===true">
+    <div class="papi">
+        <div class="back"></div>
+        <div class="block">
+            <div class="x" (click)="view()" (click)="onClick(buttonText.X)">X</div>
+            <div class="title">
+                <h3>TITOLO</h3>
+
+            </div>
+            <div class="subtitle">
+                <h6>sottotitolo</h6>
+            </div>
+            <div class="scrolling-area">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi provident minus fuga facilis aut?
+                Mollitia voluptatibus non quisquam corporis itaque commodi libero aliquid debitis exercitationem eaque
+                ex, rem quidem cumque.
+                Expedita obcaecati fuga labore dicta. Ex, minima at architecto nobis dignissimos fugiat, rerum iste
+                dolorum a expedita repudiandae officiis deserunt sapiente, adipisci alias aliquid nostrum blanditiis
+                cupiditate earum excepturi exercitationem.
+                Numquam animi maiores illum, neque ab deleniti tenetur, aperiam quod modi perferendis officia voluptatum
+                dolorem aliquid veritatis labore odio. Atque temporibus possimus officiis animi, mollitia voluptatem
+                reiciendis asperiores dignissimos libero?
+                Ipsam blanditiis dolorem, harum illum molestias eos nobis explicabo sint reprehenderit voluptatem natus
+                vel ipsa facere sapiente, quis dolor laudantium. Ullam veniam repellendus mollitia expedita quidem atque
+                tempore aut error.
+                Aliquid, architecto dolorum minima corrupti, libero dicta neque nostrum deserunt culpa et dolore eos
+                tenetur animi reprehenderit. Delectus inventore animi voluptatum ex magnam, esse earum quis
+                reprehenderit aspernatur, quo minima.
+            </div>
+            <div class="buttons">
+                <button type="button" class="btn btn-light" (click)="view()" (click)="onClick(buttonText.ANNULLA)">Annulla</button>
+                <button type="button" class="btn btn-primary" (click)="view()" (click)="onClick(buttonText.CONFERMA)">Conferma</button>
+            </div>
+        </div>
+
     </div>
-    
 </div>
