@@ -1,0 +1,20 @@
+<ng-form class="myForm">
+<div class="container-fluid">
+  <div class="d-flex row justify-content-center">
+    <div class="minus-button">
+      <button type="button" class="btn btn-dark" (click)="decreaseCounter(spy)" >-</button>
+    </div>
+    <div class="text">
+      <input type="number" [ngClass]="{'validacion':!valid}" [(ngModel)]="counter" (change)="validation(spy)"  #spy="ngModel" [ngModelOptions]="{standalone: true}"> 
+    </div>
+    <div class="plus-button">
+      <button type="button" class="btn btn-dark" (click)="increaseCounter(spy)">+</button>
+    </div>
+    
+  </div>
+  <button type="button" class="btn btn-light" (click)="setCounter(spy)" (click)="validation(spy)">assegna il valore 70</button>
+  <div>{{counter}}</div>
+  <br>TODO: remove this: {{spy }}
+</div>
+</ng-form>
+<!-- pattern="(5000|([1-4]?[0-9]?[0-9]?[0-9]?))" -->
